@@ -97,7 +97,7 @@ export default function Navbar() {
             backgroundImage: 'url(/images/Home/hero.webp)',
             height: MOBILE_MENU_HEIGHT,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'left',
             backgroundRepeat: 'no-repeat'
           }}
         >

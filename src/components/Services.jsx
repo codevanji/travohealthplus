@@ -24,7 +24,7 @@ export default function Services() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-12">Why Our Service Matters</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-32 text-center sm:text-left md:text-left">
+          <p className="text-gray-600 max-w-2xl mx-auto mb-32  leading-relaxed text-left md:text-center">
           Seeking healthcare in a foreign country can be overwhelming. We take care of every detail, ensuring you receive top-tier care and support at every step.
          </p>
         </div>

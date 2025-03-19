@@ -8,7 +8,7 @@ export default function Hero() {
       height: '100vh',
       backgroundImage: `url('/images/Home/hero.webp')`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      backgroundPosition: 'left center',
       backgroundRepeat: 'no-repeat',
     }}>
       <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
