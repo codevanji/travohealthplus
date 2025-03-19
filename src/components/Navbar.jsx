@@ -5,7 +5,7 @@ const MOBILE_MENU_HEIGHT = '100vh'
 const HEADER_HEIGHT = '64px' // Adjust this value based on your header height 
 
 const navigation = [
-  { name: 'Home', href: '#' },
+  { name: 'Home', href: '#home' },
   { name: 'Services', href: '#services' },
   { name: 'Features', href: '#features' },
   { name: 'Testimonials', href: '#testimonials' },
@@ -16,6 +16,22 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [menuHeight, setMenuHeight] = useState(MOBILE_MENU_HEIGHT)
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    setMobileMenuOpen(false)
+    const element = document.querySelector(href)
+    if (element) {
+      const headerOffset = 64
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }
 
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -62,7 +78,7 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-blue hover:text-primary">
+            <a key={item.name} href={item.href} onClick={(e) => handleNavClick(e, item.href)} className="text-sm font-semibold leading-6 text-blue hover:text-primary">
               {item.name}
             </a>
           ))}
@@ -104,7 +120,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={(e) => handleNavClick(e, item.href)}
                     className="block rounded-lg px-3 py-4 text-lg font-semibold leading-7 text-black hover:bg-white/10 transition-colors duration-200 w-full"
                   >
                     {item.name}

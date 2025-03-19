@@ -4,7 +4,7 @@ import '@fontsource/playfair-display/600.css';
 
 export default function Hero() {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8 h-screen" style={{
+    <div id="home" className="relative isolate px-6 pt-14 lg:px-8 h-screen" style={{
       height: '100vh',
       backgroundImage: `url('/images/Home/hero.webp')`,
       backgroundSize: 'cover',
