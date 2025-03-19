@@ -16,6 +16,11 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
       </div>
 
+      {/* About Us Header */}
+      <div className="relative z-10 text-center mb-12">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">About Us</h2>
+      </div>
+
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -27,7 +32,7 @@ const AboutUs = () => {
 
             {/* Content */}
             <div className="relative">
-              <h2 className="text-4xl md:text-4xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                 Empowering Global Medical Journeys
               </h2>
               <p className="text-lg md:text-md text-gray-200 mb-8 leading-relaxed">

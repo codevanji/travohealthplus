@@ -7,7 +7,7 @@ const HEADER_HEIGHT = '64px' // Adjust this value based on your header height
 const navigation = [
   { name: 'Home', href: '#home' },
   { name: 'Services', href: '#services' },
-  { name: 'Features', href: '#features' },
+  { name: 'About Us', href: '#about' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ]
