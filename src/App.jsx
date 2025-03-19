@@ -1,9 +1,8 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Introduction from './components/Introduction'
 import Services from './components/Services'
-import Features from './components/Features'
 import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
@@ -12,10 +11,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Introduction />
         <Services />
-        <Features />
         <Testimonials />
-        <Contact />
+    
       </main>
       <Footer />
     </div>

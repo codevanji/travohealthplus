@@ -4,8 +4,9 @@ import '@fontsource/playfair-display/600.css';
 
 export default function Hero() {
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8" style={{
-      backgroundImage: `url('/images/hero.webp')`,
+    <div className="relative isolate px-6 pt-14 lg:px-8 h-screen" style={{
+      height: '100vh',
+      backgroundImage: `url('/images/Home/hero.webp')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -25,17 +26,7 @@ export default function Hero() {
             Experience world-class healthcare services with our comprehensive medical tourism platform.
             We connect you with the best healthcare providers worldwide.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/80"
-            >
-              Get Started
-            </a>
-            <a href="#services" className="text-sm font-semibold leading-6 text-gray-900">
-              Learn more <span aria-hidden="true">→</span>
-            </a>
-          </div>
+
         </div>
       </div>
       <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
