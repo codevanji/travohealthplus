@@ -26,7 +26,13 @@ export default function Testimonials() {
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img src={testimonial.image} alt={testimonial.name} className="w-full h-64 object-cover rounded-t-md mb-4" />
               <h3 className="text-lg font-semibold mb-2">{testimonial.name}'s Story</h3>
-              <p className="mt-2 text-gray-600 pb-4">{testimonial.testimonial}</p>
+              <p className="text-base sm:text-md text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.06em] 
+                        font-sans 
+                        font-light
+                        xl:leading-[2rem] 
+                        px-4 lg:px-0"
+                    >{testimonial.testimonial}</p>
             </div>
           ))}
         </div>

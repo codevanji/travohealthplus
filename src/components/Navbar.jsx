@@ -6,10 +6,11 @@ const HEADER_HEIGHT = '64px' // Adjust this value based on your header height
 
 const navigation = [
   { name: 'Home', href: '#home' },
+  { name: 'Treatments', href: '#popular-treatments' },
+  { name: 'Hospitals', href: '#home' },
   { name: 'Services', href: '#services' },
   { name: 'About Us', href: '#about' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Contact Us', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -46,8 +47,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10
-      setScrolled(isScrolled)
+      setScrolled(window.scrollY > 10)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -55,11 +55,12 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className="fixed w-full z-50 transition-all duration-300" 
+    <header 
+      className="fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300"
       style={{
-        backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(5px)' : 'none',
-        boxShadow: scrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none'
+        backgroundColor: scrolled || window.innerWidth < 1024 ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
+        backdropFilter: scrolled || window.innerWidth < 1024 ? 'blur(5px)' : 'none',
+        boxShadow: scrolled || window.innerWidth < 1024 ? '0 2px 4px rgba(0,0,0,0.1)' : 'none'
       }}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">

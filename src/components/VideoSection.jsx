@@ -31,7 +31,13 @@ const VideoSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">Experience Our Journey</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-md text-white leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.06em] 
+                        font-sans 
+                        font-light
+                        xl:leading-[2rem] 
+                        px-4 lg:px-0"
+                    >
             Watch how we transform healthcare experiences and create success stories for our patients
           </p>
         </div>
@@ -75,7 +81,13 @@ const VideoSection = () => {
               {/* Video Info */}
               <div className="mt-4">
                 <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
-                <p className="text-gray-400">{video.description}</p>
+                <p className="text-base sm:text-md text-white leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.06em] 
+                        font-sans 
+                        font-light
+                        xl:leading-[2rem] 
+                        px-4 lg:px-0"
+                    >{video.description}</p>
               </div>
             </div>
           ))}
