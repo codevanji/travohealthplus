@@ -4,17 +4,17 @@ const services = [
   {
     title: 'Healthcare Services',
     description: 'Experience top-tier healthcare with our world-class medical treatments and expert professionals.',
-    image: '/images/Home/healthcareservices.jpg'
+    image: '/images/Home/healthcareservices.webp'
   },
   {
     title: 'Medical Assistance',
     description: 'Comprehensive medical assistance and support throughout your healthcare journey.',
-    image: '/images/Home/medicalassistance.jpg'
+    image: '/images/Home/medicalassistance.webp'
   },
   {
     title: 'Premium Accommodation',
     description: 'Comfortable and luxurious accommodation facilities for patients and their families.',
-    image: '/images/Home/accomodation.jpg'
+    image: '/images/Home/accomodation.webp'
   }
 ];
 

@@ -1,3 +1,5 @@
+import OptimizedImage from './common/OptimizedImage';
+
 export default function Introduction() {
   return (
     <div className="py-16 bg-white">
@@ -42,8 +44,8 @@ export default function Introduction() {
             </button>
           </div>
           <div className="relative">
-            <img
-              src="/images/Home/healing.jpg"
+            <OptimizedImage
+              src="/images/Home/healing.webp"
               alt="Healthcare Professional"
               className="w-full rounded-lg shadow-lg object-cover h-[300px] md:h-[600px]"
             />
@@ -53,8 +55,8 @@ export default function Introduction() {
         {/* Second Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img
-              src="/images/Home/worldclasstraetment.jpg"
+            <OptimizedImage
+              src="/images/Home/worldclasstraetment.webp"
               alt="World-class Healthcare"
               className="w-full rounded-lg shadow-lg object-cover h-[300px] md:h-[600px]"
             />

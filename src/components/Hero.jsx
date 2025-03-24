@@ -3,6 +3,7 @@ import '@fontsource/playfair-display/500.css';
 import '@fontsource/playfair-display/600.css';
 
 import { useState, useEffect } from 'react';
+import OptimizedImage from './common/OptimizedImage';
 
 const systemFontStack = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
@@ -75,13 +76,8 @@ const Hero = () => {
 
   return (
     <>
-      <div id="home" className="relative px-6 pt-14 lg:px-8 min-h-screen" style={{
-        height: '100vh',
-        backgroundImage: `url('/images/Home/hero.webp')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'left center',
-        backgroundRepeat: 'no-repeat',
-      }}>
+      <div id="home" className="relative px-6 pt-14 lg:px-8 min-h-screen overflow-hidden h-[100vh] bg-hero bg-cover bg-left center bg-no-repeat">
+
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
   
@@ -210,6 +206,9 @@ const Hero = () => {
             .search-section button {
               width: 73%;
             }
+          }
+          .bg-hero {
+            background-image: url('/images/Home/hero.webp');
           }
         `}
       </style>

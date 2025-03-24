@@ -1,16 +1,17 @@
 import React from 'react';
+import OptimizedImage from './common/OptimizedImage';
 import './PopularTreatments.css';
 
 const PopularTreatments = () => {
     const treatments = [
-        { id: 1, name: 'Orthopedic', image: '/images/Treatments/Orthopedic.jpg' },
-        { id: 2, name: 'Dental', image: '/images/Treatments/dental.jpg' },
-        { id: 3, name: 'Oncology', image: '/images/Treatments/Oncology.jpg' },
-        { id: 4, name: 'Cardiology', image: '/images/Treatments/Cardiology.jpg' },
-        { id: 5, name: 'Dermatology', image: '/images/Treatments/Dermatology.jpg' }, 
-        { id: 6, name: 'Spin Surgery', image: '/images/Treatments/spinetreatment.jpg' },
-        { id: 7, name: 'Cosmetic Surgery', image: '/images/Treatments/cosmeticsurgery.jpg' },
-        { id: 8, name: 'Physiotherapy', image: '/images/Treatments/Physiotherapy.jpg' }
+        { id: 1, name: 'Orthopedic', image: '/images/Treatments/Orthopedic.webp' },
+        { id: 2, name: 'Dental', image: '/images/Treatments/dental.webp' },
+        { id: 3, name: 'Oncology', image: '/images/Treatments/Oncology.webp' },
+        { id: 4, name: 'Cardiology', image: '/images/Treatments/Cardiology.webp' },
+        { id: 5, name: 'Dermatology', image: '/images/Treatments/Dermatology.webp' }, 
+        { id: 6, name: 'Spin Surgery', image: '/images/Treatments/spinetreatment.webp' },
+        { id: 7, name: 'Cosmetic Surgery', image: '/images/Treatments/cosmeticsurgery.webp' },
+        { id: 8, name: 'Physiotherapy', image: '/images/Treatments/Physiotherapy.webp' }
     ];
 
     return (
@@ -22,7 +23,7 @@ const PopularTreatments = () => {
                     {treatments.map(treatment => (
                         <div key={treatment.id} className="treatment-card">
                             <div className="image-container">
-                                <img src={treatment.image} alt={treatment.name} className="treatment-image" />
+                                <OptimizedImage src={treatment.image} alt={treatment.name} className="treatment-image" />
                                 <div className="image-overlay"></div>
                                 <div className="overlay-effect"></div>
                             </div>

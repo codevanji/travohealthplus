@@ -2,12 +2,12 @@ const testimonials = [
   {
     name: 'Sarah Thompson',
     testimonial: 'Travo Health+ made my medical journey so much easier. Their support team was incredible throughout the entire process.',
-    image: '/images/Testimonial/image1.jpg',
+    image: '/images/Testimonial/image1.webp',
   },
   {
     name: 'Michael Chen',
     testimonial: 'I saved significantly on my treatment while receiving world-class care. Highly recommend their services!',
-    image: '/images/Testimonial/image2.jpg',
+    image: '/images/Testimonial/image2.webp',
   },
   {
     name: 'Emily Rodriguez',

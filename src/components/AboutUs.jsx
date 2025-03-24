@@ -7,7 +7,7 @@ const AboutUs = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(/images/videocoverpage/coverpage1.jpg)',
+          backgroundImage: 'url(/images/videocoverpage/coverpage1.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

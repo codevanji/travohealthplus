@@ -2,25 +2,25 @@ import React, { useState, useRef } from 'react';
 
 const Clients = () => {
   const clients = [
-    { name: 'Apollo', logo: '/images/Client/Apollo logo.png' },
-    { name: 'Columbia Asia', logo: '/images/Client/ColumbiaAsiaLogo.png' },
-    { name: 'First Neuro', logo: '/images/Client/FirstNeuro logo.png' },
-    { name: 'Fortis', logo: '/images/Client/Fortis logo.png' },
-    { name: 'Hinduja', logo: '/images/Client/HindujaLogo.png' },
-    { name: 'KMC', logo: '/images/Client/KMC_logo.png' },
-    { name: 'Kanachur', logo: '/images/Client/Kanachur logo.png' },
-    { name: 'Lilavati', logo: '/images/Client/LilavatiLogo.png' },
-    { name: 'Nanavati', logo: '/images/Client/NanavatiLogo.png' },
-    { name: 'Orthomed', logo: '/images/Client/OrthomedLogo.png' },
-    { name: 'Saifee', logo: '/images/Client/SaifeeLogo.png' },
-    { name: 'Sims', logo: '/images/Client/SimsLogo.png' },
-    { name: 'VS', logo: '/images/Client/VSLogo.png' },
-    { name: 'Vinita', logo: '/images/Client/VinitaLogo.png' },
-    { name: 'Vkiram', logo: '/images/Client/VkiramLogo.png' },
-    { name: 'YENAOYA', logo: '/images/Client/YENAPOYAlogo.png' },
-    { name: 'AJ Hospital', logo: '/images/Client/aj-logo.png' },
-    { name: 'Narayana Health', logo: '/images/Client/narayanaHealth logo.png' },
-    { name: 'Unity Hospital', logo: '/images/Client/unity-hospital-logo.png' }
+    { name: 'Apollo', logo: '/images/Client/Apollo logo.webp' },
+    { name: 'Columbia Asia', logo: '/images/Client/ColumbiaAsiaLogo.webp' },
+    { name: 'First Neuro', logo: '/images/Client/FirstNeuro logo.webp' },
+    { name: 'Fortis', logo: '/images/Client/Fortis logo.webp' },
+    { name: 'Hinduja', logo: '/images/Client/HindujaLogo.webp' },
+    { name: 'KMC', logo: '/images/Client/KMC_logo.webp' },
+    { name: 'Kanachur', logo: '/images/Client/Kanachur logo.webp' },
+    { name: 'Lilavati', logo: '/images/Client/LilavatiLogo.webp' },
+    { name: 'Nanavati', logo: '/images/Client/NanavatiLogo.webp' },
+    { name: 'Orthomed', logo: '/images/Client/OrthomedLogo.webp' },
+    { name: 'Saifee', logo: '/images/Client/SaifeeLogo.webp' },
+    { name: 'Sims', logo: '/images/Client/SimsLogo.webp' },
+    { name: 'VS', logo: '/images/Client/VSLogo.webp' },
+    { name: 'Vinita', logo: '/images/Client/VinitaLogo.webp' },
+    { name: 'Vkiram', logo: '/images/Client/VkiramLogo.webp' },
+    { name: 'YENAOYA', logo: '/images/Client/YENAPOYAlogo.webp' },
+    { name: 'AJ Hospital', logo: '/images/Client/aj-logo.webp' },
+    { name: 'Narayana Health', logo: '/images/Client/narayanaHealth logo.webp' },
+    { name: 'Unity Hospital', logo: '/images/Client/unity-hospital-logo.webp' }
   ];
 
   const scrollContainer = useRef(null);

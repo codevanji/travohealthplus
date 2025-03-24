@@ -9,10 +9,12 @@ import Testimonials from './components/Testimonials'
 import Clients from './components/Clients'
 import Footer from './components/Footer'
 import PopularTreatments from './components/PopularTreatments'
+import ImagePreloader from './components/common/ImagePreloader'
 
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <ImagePreloader />
       <Navbar />
       <main>
         <Hero />
