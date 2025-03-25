@@ -85,8 +85,36 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black hover:text-white">
-            Consultation
+          <a 
+            href="#" 
+            className="
+              relative
+              rounded-full
+              bg-gradient-to-r from-primary to-[#0891b2]
+              px-6 py-3
+              text-sm
+              font-semibold
+              text-white
+              transition-all
+              duration-300
+              ease-in-out
+              hover:scale-105
+              hover:shadow-[0_0_20px_rgba(8,145,178,0.4)]
+              active:scale-95
+              before:absolute
+              before:inset-0
+              before:rounded-full
+              before:bg-gradient-to-r
+              before:from-[#0891b2]
+              before:to-primary
+              before:opacity-0
+              before:transition-opacity
+              before:duration-300
+              hover:before:opacity-100
+              before:-z-10
+            "
+          >
+            <span className="relative z-10">Get a Free Consultation</span>
           </a>
         </div>
       </nav>
@@ -131,9 +159,29 @@ export default function Navbar() {
               <div className="py-6 w-full text-center">
                 <a
                   href="#"
-                  className="mx-auto block rounded-lg px-6 py-3 text-lg font-semibold leading-7 text-white bg-black hover:bg-gray-800 text-center transition-colors duration-200 w-48"
+                  className="
+                    relative
+                    mx-auto
+                    block
+                    w-64
+                    rounded-full
+                    bg-gradient-to-r
+                    from-primary
+                    to-[#0891b2]
+                    px-6
+                    py-3
+                    text-lg
+                    font-semibold
+                    text-white
+                    transition-all
+                    duration-300
+                    ease-in-out
+                    hover:scale-105
+                    hover:shadow-[0_0_20px_rgba(8,145,178,0.4)]
+                    active:scale-95
+                  "
                 >
-                  Consultation
+                  Get a Free Consultation
                 </a>
               </div>
             </div>

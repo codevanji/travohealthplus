@@ -85,7 +85,7 @@ const Hero = () => {
  
               Your Health Journey Begins with Travo Health+
             </h1>
-        
+                 
             <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
                         font-sans 

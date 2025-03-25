@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs'
 import HowItWorks from './components/HowItWorks'
 import VideoSection from './components/VideoSection'
 import Testimonials from './components/Testimonials'
+import WhyChooseUs from './components/WhyChooseUs'
 import Clients from './components/Clients'
 import Footer from './components/Footer'
 import PopularTreatments from './components/PopularTreatments'
@@ -24,6 +25,7 @@ function App() {
         <AboutUs />
         <HowItWorks />
         <VideoSection />
+        <WhyChooseUs/>
         <Testimonials />
         <Clients />
     

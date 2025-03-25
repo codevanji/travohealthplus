@@ -52,35 +52,7 @@ export default function Introduction() {
           </div>
         </div>
 
-        {/* Second Section */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <OptimizedImage
-              src="/images/Home/worldclasstraetment.webp"
-              alt="World-class Healthcare"
-              className="w-full rounded-lg shadow-lg object-cover h-[300px] md:h-[600px]"
-            />
-          </div>
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900">
-              World-class care for global patients
-            </h2>
-            <div className="space-y-4">
-            <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
-                        tracking-[0.06em] 
-                        font-sans 
-                        font-light
-                        xl:leading-[2.5rem] 
-                        px-4 lg:px-0
-                    ">
-                We make it easy for patients around the world to get care from our network of internationally accredited hospitals and healthcare providers.
-              </p>
-            </div>
-            <button className="mt-8 inline-flex items-center px-6 py-3 border border-primary text-base font-medium rounded-md text-primary hover:bg-primary hover:text-white transition-colors duration-200">
-              International services
-            </button>
-          </div>
-        </div>
+      
       </div>
     </div>
   )
