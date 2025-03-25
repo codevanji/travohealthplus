@@ -18,7 +18,7 @@ const PopularTreatments = () => {
         <section id="popular-treatments-scroll" className="popular-treatments">
             <div className="container">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-12 text-center">
-            Treatments </h2>
+            Popular Treatments </h2>
              <div className="treatments-grid">
                     {treatments.map(treatment => (
                         <div key={treatment.id} className="treatment-card">

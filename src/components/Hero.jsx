@@ -4,6 +4,7 @@ import '@fontsource/playfair-display/600.css';
 
 import { useState, useEffect } from 'react';
 import OptimizedImage from './common/OptimizedImage';
+import './Hero.css';
 
 const systemFontStack = 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
@@ -76,24 +77,59 @@ const Hero = () => {
 
   return (
     <>
-      <div id="home" className="relative px-6 pt-14 lg:px-8 min-h-screen overflow-hidden h-[100vh] bg-hero bg-cover bg-left center bg-no-repeat">
+      <div id="home" className="hero-section relative px-6 pt-14 lg:px-8 min-h-screen overflow-hidden h-[100vh] bg-hero bg-cover bg-left center bg-no-repeat">
+        {/* Floating Medical Icons */}
+        <div className="floating-icons">
+          <svg className="floating-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+          </svg>
+          <svg className="floating-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14h-2v-4H8v-2h4V7h2v10z"/>
+          </svg>
+          <svg className="floating-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4-8c0 2.21-1.79 4-4 4s-4-1.79-4-4 1.79-4 4-4 4 1.79 4 4z"/>
+          </svg>
+          <svg className="floating-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+          </svg>
+          <svg className="floating-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-6h2v2h-2zm0-8h2v6h-2z"/>
+          </svg>
+        </div>
+        {/* Heartbeat Line */}
+        <div className="heartbeat-line">
+          <svg viewBox="0 0 600 100" preserveAspectRatio="none">
+            <path
+              d="M0 50 
+                 L100 50 
+                 L130 50 
+                 L140 20 
+                 L150 80 
+                 L160 20 
+                 L170 80 
+                 L180 50 
+                 L200 50 
+                 L500 50"
+              strokeDasharray="1000"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
 
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
   
-          <h1 className="text-center text-black  text-[2rem] sm:text-[1rem] md:text-[2rem] lg:text-[3rem] font-light leading-[1.1] tracking-[0.025em] max-w-[72rem] mx-auto mb-6 hyphens-auto break-words border-0 border-solid border-gray-200 box-border font-serif opacity-1 animate-[slideUpFade_1.2s_cubic-bezier(.22,1,.36,1)_forwards] drop-shadow-md">
- 
-              Your Health Journey Begins with Travo Health+
+  
+            <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
+              {Array.from("Your Trusted Partner in Medical Tourism").map((char, index) => (
+                <span key={index} className={`text-transparent bg-clip-text bg-gradient-to-r ${index % 2 === 0 ? 'from-white to-[#A0C4E1]' : 'from-[#A0C4E1] to-white'}`}>{char}</span>
+              ))}
             </h1>
         
-            <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
-                        tracking-[0.06em] 
-                        font-sans 
-                        font-semibold 
-                        xl:leading-[2.5rem] 
-                        px-4 lg:px-0
-                    ">
-              Experience world-class healthcare in India with our comprehensive medical tourism platform<br />
+            <br></br><p className="text-lg md:text-xl text-gray-600 font-light tracking-wide leading-relaxed text-white">
+ 
+              Plan your medical journey with ease. Affordable, high-quality treatment in India.<br />
 
             </p>
 

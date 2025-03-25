@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import './Navbar.css'
 
 const MOBILE_MENU_HEIGHT = '100vh'
 const HEADER_HEIGHT = '64px' // Adjust this value based on your header height 
@@ -54,9 +55,23 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <header 
-      className="fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300"
+      className="navbar fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300"
       style={{
         backgroundColor: scrolled || window.innerWidth < 1024 ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
         backdropFilter: scrolled || window.innerWidth < 1024 ? 'blur(5px)' : 'none',
@@ -64,8 +79,8 @@ export default function Navbar() {
       }}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold text-primary">Travo Health+</span>
+          <a href="#" className="-m-1.5 p-1.5 text-white">
+            <span className="text-2xl font-bold text-white">Travo Health+</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -79,14 +94,14 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} onClick={(e) => handleNavClick(e, item.href)} className="text-sm font-semibold leading-6 text-blue hover:text-primary">
+            <a key={item.name} href={item.href} onClick={(e) => handleNavClick(e, item.href)} className="text-sm font-semibold leading-6 text-white hover:text-white">
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black hover:text-white">
-            Consultation
+          <a href="#" className="nav-cta-button">
+            Get a Free Consultation
           </a>
         </div>
       </nav>
@@ -103,8 +118,8 @@ export default function Navbar() {
           }}
         >
           <div className="flex items-center justify-between px-6 py-4">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="text-2xl font-bold text-primary">Travo Health+</span>
+            <a href="#" className="-m-1.5 p-1.5 text-white">
+              <span className="text-2xl font-bold text-white">Travo Health+</span>
             </a>
             <button
               type="button"
@@ -122,20 +137,13 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className="block rounded-lg px-3 py-4 text-lg font-semibold leading-7 text-black hover:bg-white/10 transition-colors duration-200 w-full"
+                    className="block rounded-lg px-3 py-4 text-lg font-semibold leading-7 text-white hover:bg-white/10 transition-colors duration-200 w-full"
                   >
                     {item.name}
                   </a>
                 ))}
               </div>
-              <div className="py-6 w-full text-center">
-                <a
-                  href="#"
-                  className="mx-auto block rounded-lg px-6 py-3 text-lg font-semibold leading-7 text-white bg-black hover:bg-gray-800 text-center transition-colors duration-200 w-48"
-                >
-                  Consultation
-                </a>
-              </div>
+    
             </div>
           </div>
         </div>
