@@ -81,19 +81,13 @@ const Hero = () => {
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
   
-          <h1 className="text-center text-black  text-[2rem] sm:text-[1rem] md:text-[2rem] lg:text-[3rem] font-light leading-[1.1] tracking-[0.025em] max-w-[72rem] mx-auto mb-6 hyphens-auto break-words border-0 border-solid border-gray-200 box-border font-serif opacity-1 animate-[slideUpFade_1.2s_cubic-bezier(.22,1,.36,1)_forwards] drop-shadow-md">
- 
-              Your Health Journey Begins with Travo Health+
+      
+            <h1 className="text-center text-black text-[2rem] sm:text-[1.25rem] md:text-[2rem] lg:text-[3rem]  font-semibold leading-relaxed tracking-[0.05em] max-w-[82rem] mx-auto mb-6 hyphens-auto break-words border-0 border-solid border-gray-200 box-border font-serif opacity-1 animate-[slideUpFade_1.2s_cubic-bezier(.22,1,.36,1)_forwards] drop-shadow-lg">
+            Your Trusted Partner in Medical Tourism
             </h1>
                  
-            <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
-                        tracking-[0.06em] 
-                        font-sans 
-                        font-semibold 
-                        xl:leading-[2.5rem] 
-                        px-4 lg:px-0
-                    ">
-              Experience world-class healthcare in India with our comprehensive medical tourism platform<br />
+            <p className="text-lg sm:text-xl text-black leading-relaxed mb-6 sm:mb-8 tracking-[0.1em] font-bold xl:leading-[2.8rem] px-4 lg:px-0  leading-7">
+            Experience world-class healthcare in India.<br />
 
             </p>
 
@@ -209,6 +203,8 @@ const Hero = () => {
           }
           .bg-hero {
             background-image: url('/images/Home/hero.webp');
+
+
           }
         `}
       </style>

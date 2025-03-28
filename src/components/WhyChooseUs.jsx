@@ -28,13 +28,18 @@ const WhyChooseUs = () => {
 
   return (
     <section className="why-choose-us">
-      <h2 className="section-title" style={{ marginBottom: '4rem' }}>Why Choose Us?</h2>
+      <h2 className="text-3xl md:text-3xl lg:text-4xl leading-relaxed tracking-[0.2em] font-light text-gray-900 text-center text-black mb-6" style={{ marginBottom: '4rem' }}>Why Choose Us</h2>
       <div className="cards-container" style={{ marginTop: '2rem' }}>
         {cards.map((card, index) => (
           <div key={index} className="card">
             <div className="card-icon">{card.icon}</div>
-            <h3 className="card-title">{card.title}</h3>
-            <p className="card-description">{card.description}</p>
+            <h3 className="md:text-lg lg:text-xl sm:text-lg leading-relaxed tracking-[0.2em] font-semibold text-gray-900 text-left text-black mb-6">{card.title}</h3>
+            <p className="text-base sm:text-md text-black leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.06em] 
+                        font-sans 
+                        font-light
+                        xl:leading-[2rem] 
+                        px-4 lg:px-0 text-left">{card.description}</p>
           </div>
         ))}
       </div>

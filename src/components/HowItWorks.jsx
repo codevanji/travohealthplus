@@ -126,16 +126,17 @@ const HowItWorks = () => {
     <section ref={containerRef} className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-3xl lg:text-4xl leading-relaxed tracking-[0.2em] font-light text-gray-900 text-center text-black mb-6">
             How It Works
           </h2>
-          <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
-                    tracking-[0.06em] 
-                    font-sans 
-                    font-light
-                    xl:leading-[2.5rem] 
-                    px-4 lg:px-0
-                    text-left md:text-center">
+          <p className="text-base md:text-lg lg:text-xl sm:text-md  text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.06em] 
+                        font-sans 
+                        font-light
+                        xl:leading-[2.5rem] 
+                        px-4 lg:px-0
+                        text-left md:text-center"
+                    >
             Your journey to better health is just 6 simple steps away
           </p>
         </div>
@@ -171,7 +172,7 @@ const HowItWorks = () => {
               >
                 {step.icon}
               </div>
-              <h3 className="text-xl font-semibold">{step.title}</h3>
+              <h3 className="text-2xl md:text-xl lg:text-2xl sm:text-lg  font-semibold text-gray-900 leading-relaxed tracking-[0.1em]">{step.title}</h3>
               <p className="text-base sm:text-md text-black leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
                         font-sans 

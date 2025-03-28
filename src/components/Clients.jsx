@@ -36,7 +36,7 @@ const Clients = () => {
   return (
     <section className="py-16 bg-gray-50 relative">
       <div className="container mx-auto px-4 relative">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-24 text-center">Our Elite Medical Partners</h2>
+      <h2 className="text-3xl md:text-3xl lg:text-4xl leading-relaxed tracking-[0.2em] font-light text-gray-900 text-center text-black mb-16">Our Elite Medical Partners</h2>
         {/* Left Arrow */}
         <button
           onClick={() => scroll('left')}

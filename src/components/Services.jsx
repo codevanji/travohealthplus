@@ -23,8 +23,9 @@ export default function Services() {
     <section id="services" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-12">Why Our Service Matters</h2>
-          <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
+        <h2 className="text-3xl md:text-3xl lg:text-4xl leading-relaxed tracking-[0.1em] font-light text-gray-900 text-center mb-6">
+        Why Our Service Matters</h2>
+          <p className="text-base md:text-lg lg:text-xl sm:text-md  text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
                         font-sans 
                         font-light
@@ -52,8 +53,8 @@ export default function Services() {
               </div>
               
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-sm opacity-90">{service.description}</p>
+                <h3 className="text-xl md:text-lg lg:text-xl sm:text-md  font-bold mb-2">{service.title}</h3>
+                <p className="text-md sm:text-sm opacity-90">{service.description}</p>
               </div>
             </div>
           ))}

@@ -30,13 +30,15 @@ const VideoSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">Experience Our Journey</h2>
-          <p className="text-base sm:text-md text-white leading-relaxed mb-6 sm:mb-8 
+        <h2 className="text-3xl md:text-3xl lg:text-4xl leading-relaxed tracking-[0.2em] font-light text-gray-900 text-center text-white mb-6">Experience Our Journey</h2>
+        <p className="text-base md:text-lg lg:text-xl sm:text-md  text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
                         font-sans 
                         font-light
-                        xl:leading-[2rem] 
-                        px-4 lg:px-0"
+                        xl:leading-[2.5rem] 
+                        px-4 lg:px-0
+                        text-left md:text-center
+                        text-white"
                     >
             Watch how we transform healthcare experiences and create success stories for our patients
           </p>
@@ -80,7 +82,7 @@ const VideoSection = () => {
 
               {/* Video Info */}
               <div className="mt-4">
-                <h3 className="text-xl font-semibold text-white mb-2">{video.title}</h3>
+                <h3 className="text-3xl md:text-lg lg:text-xl leading-relaxed tracking-[0.2em] font-light text-gray-900 text-left text-white mb-6">{video.title}</h3>
                 <p className="text-base sm:text-md text-white leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
                         font-sans 
@@ -95,7 +97,25 @@ const VideoSection = () => {
 
         {/* CTA Button */}
         <div className="text-center mt-16">
-          <button className="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+          <button className="relative
+                    mx-auto
+                    block
+                    w-64
+                    rounded-full
+                    bg-gradient-to-r
+                    from-primary
+                    to-[#0891b2]
+                    px-6
+                    py-3
+                    text-lg
+                    font-semibold
+                    text-white
+                    transition-all
+                    duration-300
+                    ease-in-out
+                    hover:scale-105
+                    hover:shadow-[0_0_20px_rgba(109,148,198,0.4)]
+                    active:scale-95">
             Watch More Videos
           </button>
         </div>

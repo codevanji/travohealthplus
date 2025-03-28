@@ -5,12 +5,12 @@ const MOBILE_MENU_HEIGHT = '100vh'
 const HEADER_HEIGHT = '64px' // Adjust this value based on your header height 
 
 const navigation = [
-  { name: 'Home', href: '#home' },
-  { name: 'Treatments', href: '#popular-treatments' },
-  { name: 'Hospitals', href: '#home' },
-  { name: 'Services', href: '#services' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Contact Us', href: '#contact' },
+  { name: 'HOME', href: '#home' },
+  { name: 'TREATMENTS', href: '#popular-treatments' },
+  { name: 'HOSPITALS', href: '#home' },
+  { name: 'SERVICES', href: '#services' },
+  { name: 'ABOUT US', href: '#about' },
+  { name: 'CONTACT US', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold text-primary">Travo Health+</span>
+            <span className="text-2xl font-bold text-[#00869E]">Travo Health+</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -150,10 +150,20 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className="block rounded-lg px-3 py-4 text-lg font-semibold leading-7 text-black hover:bg-white/10 transition-colors duration-200 w-full"
+                    className="block rounded-lg px-3 py-4 text-lg font-light  leading-7 text-black hover:bg-white/10 transition-colors duration-200 w-full"
                   >
                     {item.name}
                   </a>
+
+                    /*
+           <a 
+              key={item.name} 
+              href={item.href} 
+              onClick={(e) => handleNavClick(e, item.href)} 
+              className={`text-sm font-light tracking-[0.05em] transition-colors duration-300 ${
+                scrolled ? 'text-black hover:text-gray-600' : 'text-white hover:text-gray-200'
+              }`}
+            > */
                 ))}
               </div>
               <div className="py-6 w-full text-center">

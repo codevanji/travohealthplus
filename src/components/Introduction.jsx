@@ -7,16 +7,16 @@ export default function Introduction() {
         {/* First Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900">
-            Your Journey to Healing Begins Here
+          <h2 className="text-3xl md:text-3xl lg:text-4xl sm:text-2xl leading-relaxed tracking-[0.1em] font-semibold text-gray-900 text-left mb-4">
+          Your Journey to Healing Begins Here
             </h2>
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-900">
+              <h3 className="text-2xl md:text-xl lg:text-2xl sm:text-lg  font-semibold text-gray-900 leading-relaxed tracking-[0.1em]">
                 The right answers the first time
               </h3>
                 
-            <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
-                        tracking-[0.06em] 
+            <p className="text-base md:text-lg lg:text-xl sm:text-md  text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
+                        tracking-[0.07em] 
                         font-sans 
                         font-light
                         xl:leading-[2.5rem] 
@@ -26,8 +26,8 @@ export default function Introduction() {
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-900">
-                Top-ranked in healthcare
+            <h3 className="text-2xl md:text-xl lg:text-2xl sm:text-lg  font-semibold text-gray-900 leading-relaxed tracking-[0.1em]">
+            Top-ranked in healthcare
               </h3>
               <p className="text-base sm:text-lg text-[#4A4A4A] leading-relaxed mb-6 sm:mb-8 
                         tracking-[0.06em] 
